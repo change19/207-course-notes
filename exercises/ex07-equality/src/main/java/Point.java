@@ -46,7 +46,6 @@ public class Point {
    */
   @Override
   public String toString() {
-    // TODO
     return "(" + getX() + ", " + getY() + ")";
   }
 
@@ -61,7 +60,9 @@ public class Point {
     // TODO: check that o is a Point (use `instanceof`), cast it, and compare
     //       the x and y fields.
     if (o instanceof Point){
-      return x == ((Point) o).x and y == ((Point) o).y
+      Point p = (Point) o;
+      return x == p.x && y == p.y;
+    }
     return false;
   }
 
