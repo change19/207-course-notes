@@ -70,7 +70,7 @@ public class MyHashing {
    */
   public static int hash(String value) {
     // TODO: String.toCharArray() may help.
-    total = 0;
+    int total = 0;
     for (char c: value.toCharArray()){
       total += c;
     }
