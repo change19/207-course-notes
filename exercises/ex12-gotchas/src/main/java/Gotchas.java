@@ -43,10 +43,10 @@ public class Gotchas {
   public static int[][] deepCopy(int[][] grid) {
     // TODO: build a new outer array and copy EACH inner array too, so that
     //       nothing is shared with `grid`.
-    int[][] grid_copy = new int[grid.length];
-    for (int i = 0, i < grid_copy.length, i++){
+    int[][] grid_copy = new int[grid.length][];
+    for (int i = 0; i < grid_copy.length; i++){
       grid_copy[i] = new int[grid[i].length];
-      for (int j = 0, j < grid_copy[i].length], j++){
+      for (int j = 0; j < grid_copy[i].length; j++){
         grid_copy[i][j] = grid[i][j];
       }
     }
